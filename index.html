@@ -37,7 +37,25 @@
         "images/tanjiro.jpg",
       ];
 
-      
+      let index = 0;
+      const slide = document.getElementById("slide");
+
+      function next() {
+        if (index < images.length - 1) {
+          index++;
+        } else {
+          index = 0;
+        }
+        slide.src = images[index];
+      }
+      function previous() {
+        if (index > 0) {
+          index--;
+        } else {
+          index = images.length - 1;
+        }
+        slide.src = images[index];
+      }
     </script>
   </body>
 </html>
