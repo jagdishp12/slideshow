@@ -1,11 +1,43 @@
-<!DOCTYPE html>
+</html><!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow</title>
+    
+      .icon-next:hover {
+        transform: scale(0.8) translateX(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/denji.jpg" class="slide" id="slide" />
+      <img
+        src="images/previous.png"
+        class="icon-action icon-previous"
+        onclick="previous()"
+      />
+      <img
+        src="images/next.png"
+        class="icon-action icon-next"
+        onclick="next()"
+      />
+    </div>
+
+    <script>
+      const images = [
+        "images/denji.jpg",
+        "images/eren.webp",
+        "images/goku.jpg",
+        "images/ichigo.jpg",
+        "images/luffy.jpg",
+        "images/naruto.jpg",
+        "images/saitama.jpg",
+        "images/tanjiro.jpg",
+      ];
+
+      
+    </script>
+  </body>
 </html>
